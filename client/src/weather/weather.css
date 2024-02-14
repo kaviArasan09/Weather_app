@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 400px;
+    height: 500px;
+    border-radius: 7px;
+    margin: auto;
+    background: linear-gradient(#e66465, #9198e5);
+    box-shadow: 0 4px 10px 
+}
+
+.searchbar{
+    margin-top: 70px;
+}
+
+.cloudimg{
+    margin-top: 20px;
+   
+}
+
+.temp{
+ 
+    font-size: 50px;
+    color: white;
+    margin-top: 20px;
+}
+
+.city{
+   
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+.therm{
+    width: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.temphumidity{
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
