@@ -21,8 +21,9 @@ export default function Weather() {
                 return response.json();
             }).then((data) => {
                 console.log(data);
-                if (data.cod == '404') {
+                if (data.cod === '404') {
                     setCity(data.message);
+                    setTemperature('');
                     return
 
                 }
@@ -47,8 +48,8 @@ export default function Weather() {
                 <img style={{ width: '50px' }} src={cloudy} alt='' />
             </div>
 
-            <div className='temp'>{temperature}°C</div>
-            <div className='city'>{city}</div>
+            {temperature && <div className='temp'>{temperature}°C</div>}
+            {city && <div className='city'>{city}</div>}
 
 
         </div>
